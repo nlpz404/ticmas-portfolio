@@ -6,9 +6,9 @@
     --negro: rgb(20, 20, 20);
   }
   
-/* *{
+*{
     box-sizing: border-box;
-} */
+}
   
 html{
     scroll-behavior: smooth;
@@ -191,7 +191,7 @@ hr{
 }
 
 #contacto-boton {
-    width: 10%;
+    width: 70px;
 }
 
 #contacto p{
