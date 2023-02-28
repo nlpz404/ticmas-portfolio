@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"> 
+    <link href="estilos.css" rel="stylesheet">
+    <title>Nicolás López - Compositor</title>
+</head>
+
+<body>
+    <nav id="barra">
+        <a class="barra-link" href="#sobremi">Sobre mí</a>
+        <a class="barra-link" href="#obras">Obras</a>
+        <a class="barra-link" href="#proyweb">Proyectos Web</a>
+        <a class="barra-link" href="#contacto">Contacto</a>
+        <a class="barra-link" href="https://www.youtube.com/channel/UC9LgBDWkhdv3pgXmdRTK70Q"><img src="/img/youtube.png"></a>
+        <a class="barra-link" href="https://www.instagram.com/nlpz404/"><img src="/img/instagram.png"></a>
+    </nav>
+
+    <section id="sobremi">
+        <h1 id="sobremi-titulo">Nicolás López</h1>
+        <img id="sobremi-foto" src="/img/profilepic.jpg">
+        <h2 id="sobremi-subtitulo">Compositor</h2>
+        <p>Nacido en Buenos Aires, Argentina (1992). Cursó la Licenciatura en Música de la Universidad Nacional de Tres de Febrero (UNTREF). Sus maestros en composición fueron Gabriel Valverde, Luciano Azzigotti, Marcos Franciosi, Diego Taranto y Daniel Judkovski. Actualmente se encuentra trabajando en su tesis de grado.</p>
+        <p>Ha compuesto obras para solistas y ensambles de cámara, desarrollado proyectos de música web, y ha realizado trabajos de diseño y edición de partituras.</p>
+        <p>Su música relaciona diversos estilos, obras y lenguajes. Propone una intertextualidad que se manifiesta en distintos medios: acústicos y electrónicos, sonoros y visuales.</p>
+    </section>
+
+    <section id="obras">
+        <h2 id="seccion-titulo">Obras</h2>
+        <hr>
+
+        <div id="tabla">
+            <a class="celda">
+                <iframe src="https://www.youtube.com/embed/NKU4LpsmhaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Dithering (2022) - Para cello y eletrónica</p>
+                <p>En analogía con la técnica de "dithering" empleada en los antiguos gráficos de computadora, cuando operaban con paletas de color limitadas, esta obra superpone masas de clusters para sobreponerse a la limitación melódica que le impone su propio sistema de alturas.</p>
+                <p>Su fundamento armónico es una escala igualmente temperada, con 15 divisiones iguales de la 3ra mayor compuesta.</p>
+                <p>Intérprete: Martín Devoto</p>
+            </a>
+
+            <a class="celda" href="/obras/cantiga_score.pdf"><img src="/obras/cantiga_thumb.png">
+                <audio controls src="/obras/cantiga_audio.mp3"></audio>
+                <p>Cantiga (2021) - Para Clarinete bajo en Sib</p>
+                <!-- relleno wikipedia -->
+                <p>Las cantigas son composiciones profanas propias de la lírica gallego-portuguesa. Este género se desarrolló en la Edad Media, especialmente entre los siglos XIII y mediados del XIV, en los Reinos de Galicia y Portugal, aunque también fue cultivado en otros lugares de la península Ibérica, como es el caso de las Cantigas de Santa María de Alfonso X el Sabio – no obstante, estas no se adscriben dentro del corpus de la lírica profana medieval gallego-portuguesa, a pesar de estar escritas en este idioma–.</p>
+                <p>Intérprete: Federico Landaburu</p>
+            </a>
+
+            <a class="celda" href="/obras/trespiezas_score.pdf"><img src="/obras/trespiezas_thumb.png">
+                <audio controls src="/obras/trespiezas_audio.mp3"></audio>
+                <p>Tres piezas para piano (2019)</p>
+                <p>Tres breves piezas para piano, inspiradas en un escrito de juventud de Xul Solar.</p>
+                <p>Al modo de la época, toman dicho texto como programa en un lenguaje impresionista.</p>
+                <p>Intérprete: Diego Ruiz</p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <section id="proyweb">
+        <h2 id="seccion-titulo">Proyectos Web</h2>
+        <hr>
+
+        <div id="tabla">
+            <a class="celda">
+                <iframe class="codepen" data-theme-id="dark" data-default-tab="result" data-slug-hash="rNKQVZJ" data-user="nlpz404">
+                    <span>See the Pen <a href="https://codepen.io/nlpz404/pen/rNKQVZJ">
+                    Drumpad</a> by Nicolas Lopez (<a href="https://codepen.io/nlpz404">@nlpz404</a>)
+                    on <a href="https://codepen.io">CodePen</a>.</span>
+                </iframe>
+                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                <p>DrumPad</p>
+                <p>Máquina de ritmos con DrumPad y Sequencer programada en Javascript.</p>
+                <!-- relleno wikipedia -->
+                <p>Las baterías electrónicas consisten en un módulo de sonido electrónico que produce los sonidos de percusión sintetizados y un conjunto de pads, generalmente construidos en forma de tambores y platillos, que están equipados con sensores electrónicos que envían una señal electrónica al módulo sampler que emite un sonido al reproductor.</p>
+                <p>Utiliza la librería tone.js.</p>
+            </a>
+
+        </div>
+
+    </section>
+
+    <div id="contacto">
+        <h2 id="seccion-titulo">Contacto</h2>
+        <!-- requiere PHP -->
+        <form>
+            <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido*" required><br>
+            <input type="text" id="e-mail" name="e-mail" placeholder="E-mail*" required><br>
+            <input type="text" id="telefono" name="telefono" placeholder="Whatsapp / Teléfono"><br>
+            <input type="text" id="asunto" name="asunto" placeholder="Asunto*" required><br>
+            <textarea type="text" id="mensaje" name="mensaje" placeholder="Mensaje*" wrap="hard" required></textarea><br>
+            <button id="contacto-boton" type="submit">Enviar</button>
+        </form>
+        <p>*Campos obligatorios</p>
+    </div>
+
+</body>
+
+</html>
