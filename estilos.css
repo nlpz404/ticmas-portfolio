@@ -64,6 +64,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: scroll;
 }
   
 #sobremi-titulo{
@@ -120,34 +121,55 @@ hr{
     justify-content: center;
 }
   
-.celda{
+.celda-contenido{
     background-color: var(--gris);
     text-decoration: none;
     border-radius: 10px;
-    margin: 0 auto 2rem auto
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
 }
-  
-.celda img, audio, iframe{
+
+.expandir {
+    margin: 0 auto 2rem auto;
+    border-radius: 0 0 50% 50%;
+    font-size: 2rem;
+    text-align: center;
+    vertical-align:middle;
+    color: darkgoldenrod;
+    width: 3rem;
+    height: 3rem;
+    background-color: var(--gris);
+    cursor: pointer;
+    user-select:none;
+}
+
+.expandir:hover {
+    color:gold;
+    background-color: var(--negro);
+}
+
+.celda-contenido img, audio, iframe{
     width: 100%;
     border-radius: 10px 10px 0 0;
 }
 
-.celda audio{
+.celda-contenido audio{
     border-radius: 0;
 }
 
-.celda iframe{
+.celda-contenido iframe{
     height: 40%;
 }
   
-.celda p{
+.celda-contenido p{
     text-align: center;
     vertical-align: center;
     color: white;
     margin: 1rem 1.5rem;
 }
   
-.celda:hover {
+.celda-contenido:hover {
     background-color: var(--negro);
 }
     
@@ -176,7 +198,7 @@ hr{
 
 #contacto form{
     margin: 2rem auto 0 auto;
-    width: 50%;
+    width: 75%;
 }
 
 #contacto input{

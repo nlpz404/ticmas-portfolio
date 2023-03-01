@@ -33,29 +33,41 @@
         <hr>
 
         <div id="tabla">
-            <a class="celda">
-                <iframe src="https://www.youtube.com/embed/NKU4LpsmhaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Dithering (2022) - Para cello y eletrónica</p>
-                <p>En analogía con la técnica de "dithering" empleada en los antiguos gráficos de computadora, cuando operaban con paletas de color limitadas, esta obra superpone masas de clusters para sobreponerse a la limitación melódica que le impone su propio sistema de alturas.</p>
-                <p>Su fundamento armónico es una escala igualmente temperada, con 15 divisiones iguales de la 3ra mayor compuesta.</p>
-                <p>Intérprete: Martín Devoto</p>
-            </a>
+            <div class="celda">
+                <div class="celda-contenido" id="celda1">
+                    <iframe src="https://www.youtube.com/embed/NKU4LpsmhaE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p>Dithering (2022) - Para cello y electrónica</p>
+                    <p>En analogía con la técnica de "dithering" empleada en los antiguos gráficos de computadora, cuando operaban con paletas de color limitadas, esta obra superpone masas de clusters para sobreponerse a la limitación melódica que le impone su propio sistema de alturas.</p>
+                    <p>Su fundamento armónico es una escala igualmente temperada, con 15 divisiones iguales de la 3ra mayor compuesta.</p>
+                    <p>Intérprete: Martín Devoto</p>
+                </div>
+                <div class="expandir" id="expandir1">v</div>
+            </div>
 
-            <a class="celda" href="obras/cantiga_score.pdf"><img src="obras/cantiga_thumb.png">
-                <audio controls src="obras/cantiga_audio.mp3"></audio>
-                <p>Cantiga (2021) - Para Clarinete bajo en Sib</p>
-                <!-- relleno wikipedia -->
-                <p>Las cantigas son composiciones profanas propias de la lírica gallego-portuguesa. Este género se desarrolló en la Edad Media, especialmente entre los siglos XIII y mediados del XIV, en los Reinos de Galicia y Portugal, aunque también fue cultivado en otros lugares de la península Ibérica, como es el caso de las Cantigas de Santa María de Alfonso X el Sabio – no obstante, estas no se adscriben dentro del corpus de la lírica profana medieval gallego-portuguesa, a pesar de estar escritas en este idioma–.</p>
-                <p>Intérprete: Federico Landaburu</p>
-            </a>
+            <div class="celda">
+                <div class="celda-contenido" id="celda2">
+                    <a href="obras/cantiga_score.pdf"><img src="obras/cantiga_thumb.png"></a>
+                    <audio controls src="obras/cantiga_audio.mp3"></audio>
+                    <p>Cantiga (2021) - Para Clarinete bajo en Sib</p>
+                    <!-- relleno wikipedia -->
+                    <p>Las cantigas son composiciones profanas propias de la lírica gallego-portuguesa. Este género se desarrolló en la Edad Media, especialmente entre los siglos XIII y mediados del XIV, en los Reinos de Galicia y Portugal, aunque también fue cultivado en otros lugares de la península Ibérica, como es el caso de las Cantigas de Santa María de Alfonso X el Sabio – no obstante, estas no se adscriben dentro del corpus de la lírica profana medieval gallego-portuguesa, a pesar de estar escritas en este idioma–.</p>
+                    <p>Intérprete: Federico Landaburu</p>
+                </div>
+                <div class="expandir" id="expandir2">v</div>
+            </div>
 
-            <a class="celda" href="obras/trespiezas_score.pdf"><img src="obras/trespiezas_thumb.png">
-                <audio controls src="obras/trespiezas_audio.mp3"></audio>
-                <p>Tres piezas para piano (2019)</p>
-                <p>Tres breves piezas para piano, inspiradas en un escrito de juventud de Xul Solar.</p>
-                <p>Al modo de la época, toman dicho texto como programa en un lenguaje impresionista.</p>
-                <p>Intérprete: Diego Ruiz</p>
-            </a>
+            <div class="celda">
+                <div class="celda-contenido" id="celda3">
+                    <a href="obras/trespiezas_score.pdf"><img src="obras/trespiezas_thumb.png"></a>
+                    <audio controls src="obras/trespiezas_audio.mp3"></audio>
+                    <p>Tres piezas para piano (2019)</p>
+                    <p>Tres breves piezas para piano, inspiradas en un escrito de juventud de Xul Solar.</p>
+                    <p>Al modo de la época, toman dicho texto como programa en un lenguaje impresionista.</p>
+                    <p>Intérprete: Diego Ruiz</p>
+                </div>
+                <div class="expandir" id="expandir3">v</div>
+                <!-- la idea es que al apretar este boton, cambie el css de celda-contenido height:400px a height:auto -->
+            </div>
 
         </div>
 
@@ -66,19 +78,22 @@
         <hr>
 
         <div id="tabla">
-            <a class="celda">
-                <iframe class="codepen" data-theme-id="dark" data-default-tab="result" data-slug-hash="rNKQVZJ" data-user="nlpz404">
-                    <span>See the Pen <a href="https://codepen.io/nlpz404/pen/rNKQVZJ">
-                    Drumpad</a> by Nicolas Lopez (<a href="https://codepen.io/nlpz404">@nlpz404</a>)
-                    on <a href="https://codepen.io">CodePen</a>.</span>
-                </iframe>
-                <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
-                <p>DrumPad</p>
-                <p>Máquina de ritmos con DrumPad y Sequencer programada en Javascript.</p>
-                <!-- relleno wikipedia -->
-                <p>Las baterías electrónicas consisten en un módulo de sonido electrónico que produce los sonidos de percusión sintetizados y un conjunto de pads, generalmente construidos en forma de tambores y platillos, que están equipados con sensores electrónicos que envían una señal electrónica al módulo sampler que emite un sonido al reproductor.</p>
-                <p>Utiliza la librería tone.js.</p>
-            </a>
+            <div class="celda">
+                <div class="celda-contenido" id="celda4">
+                    <iframe class="codepen" data-theme-id="dark" data-default-tab="result" data-slug-hash="rNKQVZJ" data-user="nlpz404">
+                        <span>See the Pen <a href="https://codepen.io/nlpz404/pen/rNKQVZJ">
+                        Drumpad</a> by Nicolas Lopez (<a href="https://codepen.io/nlpz404">@nlpz404</a>)
+                        on <a href="https://codepen.io">CodePen</a>.</span>
+                    </iframe>
+                    <script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+                    <p>DrumPad</p>
+                    <p>Máquina de ritmos con DrumPad y Sequencer programada en Javascript.</p>
+                    <!-- relleno wikipedia -->
+                    <p>Las baterías electrónicas consisten en un módulo de sonido electrónico que produce los sonidos de percusión sintetizados y un conjunto de pads, generalmente construidos en forma de tambores y platillos, que están equipados con sensores electrónicos que envían una señal electrónica al módulo sampler que emite un sonido al reproductor.</p>
+                    <p>Utiliza la librería tone.js.</p>
+                </div>
+                <div class="expandir" id="expandir4">v</div>
+            </div>
 
         </div>
 
@@ -98,6 +113,7 @@
         <p>*Campos obligatorios</p>
     </div>
 
+    <script src="javascript.js"></script>
 </body>
 
 </html>
