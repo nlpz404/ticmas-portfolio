@@ -62,15 +62,20 @@ body{
       var(--negro));
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     overflow: scroll;
 }
+
+#sobremi::-webkit-scrollbar{
+    display: none;
+  }
   
 #sobremi-titulo{
     color: white;
     font-size: 4rem;
-    margin: 0;
+    margin: 3rem 0 1rem 0;
+    text-align:center;
 }
 
 #sobremi-foto {
@@ -90,6 +95,10 @@ body{
     text-align: center;
     margin: 0.5rem 15%;
     font-size: 1.2rem;
+}
+
+#sobremi p:last-of-type{
+    margin: 0.5rem 15% 2rem 15%;
 }
 
 #obras{
@@ -176,7 +185,6 @@ hr{
 #proyweb{
     width: 100%;
     margin: 0;
-    /* padding: 0; */
     background-color: var(--azuloscuro);
     padding-top: 4rem;
 }
@@ -227,8 +235,21 @@ hr{
     }
 }
   
-@media(max-width: 600px){
+@media(max-width: 768px){
     #tabla{
-      grid-template-columns: 1fr;
+          grid-template-columns: 1fr;
+    }
+    .barra-link{
+        padding:10px 5px;
+        font-size: 14px;
+    }
+    .barra-link img{
+        height: 0.8rem
+    }
+    .barra-link:last-of-type{
+        margin-right: 0.5rem;
+    }
+    #sobremi-titulo{
+        font-size: 3rem;
     }
 }
